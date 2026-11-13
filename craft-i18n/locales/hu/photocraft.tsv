@@ -2074,7 +2074,7 @@ cameraData	Model	Típus
 	My Brushes	Saját ecsetek
 	name	név
 	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or copy the image in your file manager and paste it with {paste}.	Wayland alatt a natív fájlbehúzás még nem támogatott. Használd a Fájl › Megnyitás… parancsot, vagy másold a képet a fájlkezelőben, és illeszd be ({paste}).
-	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run crocwork Photo under XWayland with `WAYLAND_DISPLAY= photocraft`.	A fájlok natív behúzása Waylanden még nem támogatott. Használd a Fájl › Megnyitás parancsot, vagy futtasd a PhotoCraftot XWaylanden: `WAYLAND_DISPLAY= photocraft`.
+	Native file drag-and-drop is not supported on Wayland yet. Use File › Open, or run crocwork Photo under XWayland with `WAYLAND_DISPLAY= photocraft`.	A fájlok natív behúzása Waylanden még nem támogatott. Használd a Fájl › Megnyitás parancsot, vagy futtasd a crocwork Photo XWaylanden: `WAYLAND_DISPLAY= photocraft`.
 	Native file drag-and-drop is unavailable	A natív fájlbehúzás nem érhető el
 	Nearest Neighbor	Legközelebbi szomszéd
 	Nearest neighbor	Legközelebbi szomszéd
@@ -2362,7 +2362,7 @@ smartSvg	Other application	Másik alkalmazás
 smartSvg	crocwork Photo (internal editor)	crocwork Photo (belső szerkesztő)
 	crocwork Photo can't reach the system clipboard in this session. On Wayland, a Flatpak sandbox hides the protocol that images from other apps are read through.	A crocwork Photo ebben a munkamenetben nem fér hozzá a rendszer vágólapjához. Waylanden a Flatpak homokozó elrejti azt a protokollt, amelyen keresztül más alkalmazások képei olvashatók.
 	crocwork Photo Defaults	crocwork Photo alapértelmezések
-	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	A crocwork Photo egy másik képszerkesztő billentyűparancs-készletét találta ezen a számítógépen: {set}. Ebben {n} billentyűparancs eltér a crocwork Photoétól. Importálod?
+	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	A crocwork Photo egy másik képszerkesztő billentyűparancs-készletét találta ezen a számítógépen: {set}. Ebben {n} billentyűparancs eltér a crocwork Photo. Importálod?
 	crocwork Photo is using the CPU image compositor. The window may still use your graphics adapter.	A crocwork Photo a CPU-s képösszeállítót használja. Az ablak megjelenítése ettől még használhatja a grafikus adaptert.
 	crocwork Photo keeps retrying; until a save succeeds, preference changes are lost when it closes.	A crocwork Photo tovább próbálkozik; amíg a mentés nem sikerül, a beállítások módosításai bezáráskor elvesznek.
 	crocwork Photo Manages Colors	A crocwork Photo kezeli a színeket
@@ -2530,7 +2530,7 @@ cameraRaw	Purple	Lila
 	Quick Selection Tool	Gyorskijelölés
 	Quick Sync	Gyors szinkronizálás
 	Quit	Kilépés
-	Quit crocwork Photo	Kilépés a PhotoCraftból
+	Quit crocwork Photo	Kilépés a crocwork Photo
 	Quit {app}	Kilépés: {app}
 	Radial Blur	Sugárirányú elmosás
 	Radial Blur…	Sugárirányú elmosás…
@@ -2797,8 +2797,8 @@ cameraRaw	Roughness	Érdesség
 	Save these settings as a Camera Raw .xmp file	A beállítások mentése Camera Raw .xmp-fájlként
 	Save these shortcuts as a .kys file	A billentyűparancsok mentése .kys fájlként
 	Save these shortcuts as a new set	A billentyűparancsok mentése új készletként
-smartSvg	Save to the opened SVG file. Each saved change becomes one undo step in crocwork Photo.	Mentse a megnyitott SVG-fájlba. Minden mentett módosítás külön visszavonási lépés lesz a PhotoCraftban.
-	Save your work and restart crocwork Photo to retry GPU acceleration. CPU rendering remains active for this session.	A GPU-gyorsítás újrapróbálásához mentsd a munkádat, majd indítsd újra a PhotoCraftot. Ebben a munkamenetben a CPU-s megjelenítés marad aktív.
+smartSvg	Save to the opened SVG file. Each saved change becomes one undo step in crocwork Photo.	Mentse a megnyitott SVG-fájlba. Minden mentett módosítás külön visszavonási lépés lesz a crocwork Photo.
+	Save your work and restart crocwork Photo to retry GPU acceleration. CPU rendering remains active for this session.	A GPU-gyorsítás újrapróbálásához mentsd a munkádat, majd indítsd újra a crocwork Photo. Ebben a munkamenetben a CPU-s megjelenítés marad aktív.
 	Saved a copy as {path}	Másolat mentve: {path}
 	Saved contours to {file}	Kontúrok mentve: {file}
 @plural	Saved for Web: {n} file|Saved for Web: {n} files	Mentés webre: {n} fájl|Mentés webre: {n} fájl
@@ -3272,7 +3272,7 @@ cameraRaw	Temperature	Színhőmérséklet
 	There are too many sets: delete one first.	Túl sok készlet van: előbb töröljön egyet.
 	There is no color table to save.	Nincs menthető színtábla.
 	There is no crop size or ratio to save	Nincs menthető körbevágási méret vagy arány
-	These settings aren't available in crocwork Photo yet.	Ezek a beállítások a PhotoCraftban még nem érhetők el.
+	These settings aren't available in crocwork Photo yet.	Ezek a beállítások a crocwork Photo még nem érhetők el.
 	Thin	Hajszálvékony
 fontWeight	Thin	Hajszálvékony
 	This adjustment ({key}) is kept as imported and can't be edited yet.	Ez a korrekció ({key}) importált állapotában marad, és egyelőre nem szerkeszthető.
@@ -3313,8 +3313,8 @@ cameraRaw	Tint	Színezet
 	Title	Title
 	Titling Alternates	Címbetű-változatok
 	To Center	Középre
-	To drop files, start crocwork Photo under XWayland: `{command}`	Fájlok behúzásához indítsd a PhotoCraftot XWayland alatt: `{command}`
-	To paste from other apps, start crocwork Photo under XWayland: `{command}`	Ha más alkalmazásokból szeretne beilleszteni, indítsa a PhotoCraftot XWayland alatt: `{command}`
+	To drop files, start crocwork Photo under XWayland: `{command}`	Fájlok behúzásához indítsd a crocwork Photo XWayland alatt: `{command}`
+	To paste from other apps, start crocwork Photo under XWayland: `{command}`	Ha más alkalmazásokból szeretne beilleszteni, indítsa a crocwork Photo XWayland alatt: `{command}`
 	Toggle count group visibility	Számlálócsoport láthatóságának váltása
 	Toggle Last State	Utolsó állapot váltása
 	Toggle reference point	Viszonyítási pont be/ki
@@ -3583,7 +3583,7 @@ navigator	Zoom	Nagyítás mértéke
 	{name} was changed by another app after it was opened or saved here.	A(z) {name} fájlt egy másik alkalmazás módosította, miután itt megnyitották vagy mentették.
 @plural	{n} action file loaded|{n} action files loaded	{n} műveletfájl betöltve|{n} műveletfájl betöltve
 @plural	{n} action|{n} actions	{n} művelet|{n} művelet
-	{n} commands are not in crocwork Photo.	{n} parancs nem érhető el a PhotoCraftban.
+	{n} commands are not in crocwork Photo.	{n} parancs nem érhető el a crocwork Photo.
 @plural	{n} file could not be loaded: {errors}|{n} files could not be loaded: {errors}	{n} fájlt nem sikerült betölteni: {errors}|{n} fájlt nem sikerült betölteni: {errors}
 @plural	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.	A rétegkompozícióban rögzített rétegek közül {n} törlődött. Frissítsd a rétegkompozíciót, vagy töröld a figyelmeztetést.|A rétegkompozícióban rögzített rétegek közül {n} törlődött. Frissítsd a rétegkompozíciót, vagy töröld a figyelmeztetést.
 @plural	{n} layer|{n} layers	{n} réteg|{n} réteg
@@ -3593,7 +3593,7 @@ navigator	Zoom	Nagyítás mértéke
 @plural	{n} sample point removed|{n} sample points removed	{n} mintavételi pont eltávolítva|{n} mintavételi pont eltávolítva
 @plural	{n} sample|{n} samples	{n} minta|{n} minta
 @plural	{n} slice|{n} slices	{n} szelet|{n} szelet
-@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} lépésnek még nincs megfelelője a PhotoCraftban|{n} lépésnek még nincs megfelelője a PhotoCraftban
+@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} lépésnek még nincs megfelelője a crocwork Photo|{n} lépésnek még nincs megfelelője a crocwork Photo
 @plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	{n} Photoshop-megfelelő nélküli lépés kihagyva|{n} Photoshop-megfelelő nélküli lépés kihagyva
 	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: az elérési út nem érvényes Unicode-szöveg. Nevezd át a fájlt, és nyisd meg újra.
 	{path}: the path is not valid Unicode; save under another name.	{path}: az elérési út nem érvényes Unicode-szöveg. Mentsd más néven.

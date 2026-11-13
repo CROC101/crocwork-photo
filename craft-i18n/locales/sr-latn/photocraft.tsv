@@ -3577,7 +3577,7 @@ navigator	Zoom	Uvećanje
 @plural	{n} sample point removed|{n} sample points removed	Uklonjena je {n} tačka uzorkovanja|Uklonjene su {n} tačke uzorkovanja|Uklonjeno je {n} tačaka uzorkovanja
 @plural	{n} sample|{n} samples	{n} uzorak|{n} uzorka|{n} uzoraka
 @plural	{n} slice|{n} slices	{n} isečak|{n} isečka|{n} isečaka
-@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} korak još nema ekvivalent u PhotoCraftu|{n} koraka još nemaju ekvivalent u PhotoCraftu|{n} koraka još nema ekvivalent u PhotoCraftu
+@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} korak još nema ekvivalent u crocwork Photo|{n} koraka još nemaju ekvivalent u crocwork Photo|{n} koraka još nema ekvivalent u crocwork Photo
 @plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	Izostavljen je {n} korak bez ekvivalenta u Photoshopu|Izostavljena su {n} koraka bez ekvivalenta u Photoshopu|Izostavljeno je {n} koraka bez ekvivalenta u Photoshopu
 	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: putanja nije ispravan Unicode; preimenujte datoteku i ponovo je otvorite.
 	{path}: the path is not valid Unicode; save under another name.	{path}: putanja nije ispravan Unicode; sačuvajte pod drugim imenom.

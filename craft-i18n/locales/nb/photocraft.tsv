@@ -2469,13 +2469,13 @@ cameraRaw	Paint Overlay	Malingsoverlegg
 	crocwork Photo	crocwork Photo
 	crocwork Photo can't reach the system clipboard in this session. On Wayland, a Flatpak sandbox hides the protocol that images from other apps are read through.	crocwork Photo får ikke tilgang til systemets utklippstavle i denne økten. På Wayland skjuler en Flatpak-sandkasse protokollen som bilder fra andre programmer leses gjennom.
 	crocwork Photo Defaults	crocwork Photo-standarder
-	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo fant hurtigtastsettet {set} fra et annet bilderedigeringsprogram på denne datamaskinen: {n} av hurtigtastene avviker fra PhotoCrafts. Importere det?
+	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo fant hurtigtastsettet {set} fra et annet bilderedigeringsprogram på denne datamaskinen: {n} av hurtigtastene avviker fra crocwork Photo. Importere det?
 	crocwork Photo is using the CPU image compositor. The window may still use your graphics adapter.	crocwork Photo bruker CPU-bildekomposisjon. Vinduet kan fortsatt bruke grafikkortet ditt.
 	crocwork Photo keeps retrying; until a save succeeds, preference changes are lost when it closes.	crocwork Photo prøver på nytt; til en lagring lykkes, går innstillingsendringer tapt når det lukkes.
 	crocwork Photo Manages Colors	crocwork Photo styrer farger
 	crocwork Photo on GitHub	crocwork Photo på GitHub
-	crocwork Photo Website	PhotoCrafts nettsted
-	crocwork Photo website	PhotoCrafts nettsted
+	crocwork Photo Website	crocwork Photo nettsted
+	crocwork Photo website	crocwork Photo nettsted
 	crocwork Photo — an open-source, native image editor written in Rust.	crocwork Photo: et bilderedigeringsprogram med åpen kildekode, skrevet i Rust.
 	crocwork Photo — Screen Color Picker	crocwork Photo: skjermfargevelger
 	Photography	Fotografi

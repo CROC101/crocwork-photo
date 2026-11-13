@@ -170,7 +170,7 @@
 	Aligned	Justerad
 	All Classes	Alla klasser
 	All Layers No Adjustments	Alla lager utan justeringar
-	All shortcuts reset to crocwork Photo defaults.	Alla kortkommandon har återställts till PhotoCrafts standardvärden.
+	All shortcuts reset to crocwork Photo defaults.	Alla kortkommandon har återställts till crocwork Photo standardvärden.
 	All User Slices	Alla användarskivor
 	Allow agent control	Tillåt agentstyrning
 	Allow Continue	Tillåt att fortsätta
@@ -2540,13 +2540,13 @@ cameraRaw	Paint Overlay	Målningsöverlägg
 	crocwork Photo	crocwork Photo
 	crocwork Photo can't reach the system clipboard in this session. On Wayland, a Flatpak sandbox hides the protocol that images from other apps are read through.	crocwork Photo kommer inte åt systemets urklipp i den här sessionen. Under Wayland döljer en Flatpak-sandlåda protokollet som bilder från andra appar läses via.
 	crocwork Photo Defaults	crocwork Photo-standard
-	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo hittade din uppsättning kortkommandon {set} från en annan bildredigerare på den här datorn: {n} av dess kortkommandon skiljer sig från PhotoCrafts. Vill du importera den?
+	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo hittade din uppsättning kortkommandon {set} från en annan bildredigerare på den här datorn: {n} av dess kortkommandon skiljer sig från crocwork Photo. Vill du importera den?
 	crocwork Photo is using the CPU image compositor. The window may still use your graphics adapter.	crocwork Photo använder CPU-bildkompositören. Fönstret kan fortfarande använda ditt grafikkort.
 	crocwork Photo keeps retrying; until a save succeeds, preference changes are lost when it closes.	crocwork Photo fortsätter att försöka; tills en sparning lyckas går ändrade inställningar förlorade när programmet stängs.
 	crocwork Photo Manages Colors	crocwork Photo hanterar färger
 	crocwork Photo on GitHub	crocwork Photo på GitHub
-	crocwork Photo Website	PhotoCrafts webbplats
-	crocwork Photo website	PhotoCrafts webbplats
+	crocwork Photo Website	crocwork Photo webbplats
+	crocwork Photo website	crocwork Photo webbplats
 	crocwork Photo — an open-source, native image editor written in Rust.	crocwork Photo — en inbyggd bildredigerare med öppen källkod, skriven i Rust.
 	crocwork Photo — Screen Color Picker	crocwork Photo — Skärmfärgväljare
 	Photography	Fotografi

@@ -81,7 +81,7 @@
 	A picked document is no longer open.	Yksi valituista asiakirjoista ei ole enää auki.
 	A save to {name} is still running; try again when it finishes	Tallennus tiedostoon {name} on vielä käynnissä; yritä uudelleen sen päätyttyä
 	A:	K:
-	About crocwork Photo	Tietoja PhotoCraftista
+	About crocwork Photo	Tietoja crocwork Photo
 	About {app}	Tietoja: {app}
 	Accelerated	Kiihdytetty
 	Accept and Go to Conflict	Hyväksy ja siirry ristiriitaan
@@ -177,7 +177,7 @@
 	All Caps	Isot kirjaimet
 	All Classes	Kaikki luokat
 	All Layers No Adjustments	Kaikki tasot ilman säätöjä
-	All shortcuts reset to crocwork Photo defaults.	Kaikki pikanäppäimet palautettu PhotoCraftin oletusasetuksiin.
+	All shortcuts reset to crocwork Photo defaults.	Kaikki pikanäppäimet palautettu crocwork Photo oletusasetuksiin.
 	All User Slices	Kaikki käyttäjän viipaleet
 	Allow agent control	Salli agentin ohjaus
 	Allow Continue	Salli jatkaminen
@@ -1014,7 +1014,7 @@ cameraData	Date Taken	Kuvauspäivä
 	Default Foreground and Background Colors	Oletusarvoiset edusta- ja taustavärit
 	Default Foreground and Background Colors (D)	Oletusarvoiset edusta- ja taustavärit (D)
 	Default Leaves	Oletuslehdet
-	Default crocwork Photo Size	PhotoCraftin oletuskoko
+	Default crocwork Photo Size	crocwork Photo oletuskoko
 	Default printer	Oletustulostin
 	Default restored.	Oletus palautettu.
 	Defaults	Oletukset
@@ -1906,9 +1906,9 @@ fontWeight	Italic	Kursivoitu
 	Its layers need {needed} of GPU memory; the budget leaves them {budget}.	Sen tasot tarvitsevat {needed} GPU-muistia; budjetti jättää niille {budget}.
 	Ivy	Muratti
 	Jag	Rosoisuus
-	Join the crocwork Discord	Liity ArtCraftin Discordiin
-	Join the crocwork Discord ({url})	Liity ArtCraftin Discordiin ({url})
-	Join the crocwork Discord…	Liity ArtCraftin Discordiin…
+	Join the crocwork Discord	Liity crocwork Discordiin
+	Join the crocwork Discord ({url})	Liity crocwork Discordiin ({url})
+	Join the crocwork Discord…	Liity crocwork Discordiin…
 	Join us on Discord	Liity Discordiin
 	JPEG Options	JPEG-asetukset
 	Jpeg quality	JPEG-laatu
@@ -2632,7 +2632,7 @@ cameraRaw	Paint Overlay	Maalipeite
 	crocwork Photo	crocwork Photo
 	crocwork Photo can't reach the system clipboard in this session. On Wayland, a Flatpak sandbox hides the protocol that images from other apps are read through.	crocwork Photo ei pääse järjestelmän leikepöydälle tässä istunnossa. Waylandissa Flatpak-hiekkalaatikko piilottaa protokollan, jonka kautta muiden sovellusten kuvat luetaan.
 	crocwork Photo Defaults	crocwork Photo-oletukset
-	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo löysi tältä tietokoneelta toisen kuvankäsittelyohjelman pikanäppäinsarjan {set}: {n} sen pikanäppäintä poikkeaa PhotoCraftin pikanäppäimistä. Tuodaanko se?
+	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo löysi tältä tietokoneelta toisen kuvankäsittelyohjelman pikanäppäinsarjan {set}: {n} sen pikanäppäintä poikkeaa crocwork Photo pikanäppäimistä. Tuodaanko se?
 	crocwork Photo is using the CPU image compositor. The window may still use your graphics adapter.	crocwork Photo käyttää CPU-kuvankoostinta. Ikkuna voi silti käyttää näytönohjainta.
 	crocwork Photo keeps retrying; until a save succeeds, preference changes are lost when it closes.	crocwork Photo yrittää uudelleen; ennen onnistunutta tallennusta tehdyt asetusmuutokset menetetään, kun sovellus suljetaan.
 	crocwork Photo Manages Colors	crocwork Photo hallitsee värejä
@@ -3645,7 +3645,7 @@ cameraRaw	Texture	Tekstuuri
 	There are too many sets: delete one first.	Sarjoja on liikaa: poista ensin yksi.
 	There is no color table to save.	Tallennettavaa väritaulukkoa ei ole.
 	There is no crop size or ratio to save	Tallennettavaa rajauskokoa tai -suhdetta ei ole
-	These settings aren't available in crocwork Photo yet.	Nämä asetukset eivät ole vielä käytettävissä PhotoCraftissa.
+	These settings aren't available in crocwork Photo yet.	Nämä asetukset eivät ole vielä käytettävissä crocwork Photo.
 	Thickness	Paksuus
 	Thin	Ohut
 fontWeight	Thin	Ohut
@@ -4002,7 +4002,7 @@ navigator	Zoom	Zoomaus
 	{name} was changed by another app after it was opened or saved here.	Toinen ohjelma on muuttanut tiedostoa {name} sen jälkeen, kun se avattiin tai tallennettiin täällä.
 @plural	{n} action file loaded|{n} action files loaded	Ladattu {n} toimintotiedosto|Ladattu {n} toimintotiedostoa
 @plural	{n} action|{n} actions	{n} toiminto|{n} toimintoa
-	{n} commands are not in crocwork Photo.	{n} komentoa ei ole PhotoCraftissa.
+	{n} commands are not in crocwork Photo.	{n} komentoa ei ole crocwork Photo.
 @plural	{n} document|{n} documents	{n} asiakirja|{n} asiakirjaa
 @plural	{n} file could not be loaded: {errors}|{n} files could not be loaded: {errors}	{n} tiedoston lataaminen epäonnistui: {errors}|{n} tiedoston lataaminen epäonnistui: {errors}
 @plural	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.	{n} tämän asetelman tallentama taso poistettiin. Päivitä asetelma tai tyhjennä varoitus.|{n} tämän asetelman tallentamaa tasoa poistettiin. Päivitä asetelma tai tyhjennä varoitus.
@@ -4014,7 +4014,7 @@ navigator	Zoom	Zoomaus
 @plural	{n} sample point removed|{n} sample points removed	{n} näytepiste poistettu|{n} näytepistettä poistettu
 @plural	{n} sample|{n} samples	{n} näyte|{n} näytettä
 @plural	{n} slice|{n} slices	{n} viipale|{n} viipaletta
-@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} vaiheella ei ole vielä vastaavuutta PhotoCraftissa|{n} vaiheella ei ole vielä vastaavuutta PhotoCraftissa
+@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} vaiheella ei ole vielä vastaavuutta crocwork Photo|{n} vaiheella ei ole vielä vastaavuutta crocwork Photo
 @plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	{n} vaihe jätettiin pois, koska sillä ei ole Photoshop-vastinetta|{n} vaihetta jätettiin pois, koska niillä ei ole Photoshop-vastinetta
 	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: polku ei ole kelvollista Unicodea; nimeä tiedosto uudelleen ja avaa se sitten.
 	{path}: the path is not valid Unicode; save under another name.	{path}: polku ei ole kelvollista Unicodea; tallenna toisella nimellä.

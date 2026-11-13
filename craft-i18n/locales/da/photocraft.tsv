@@ -181,7 +181,7 @@
 	All Caps	Versaler
 	All Classes	Alle klasser
 	All Layers No Adjustments	Alle lag uden justeringer
-	All shortcuts reset to crocwork Photo defaults.	Alle genveje er nulstillet til PhotoCrafts standardindstillinger.
+	All shortcuts reset to crocwork Photo defaults.	Alle genveje er nulstillet til crocwork Photo standardindstillinger.
 	All User Slices	Alle brugerudsnit
 	Allow agent control	Tillad agentstyring
 	Allow Continue	Tillad fortsættelse
@@ -1909,9 +1909,9 @@ fontWeight	Italic	Kursiv
 	Its layers need {needed} of GPU memory; the budget leaves them {budget}.	Dets lag kræver {needed} GPU-hukommelse; budgettet efterlader dem {budget}.
 	Ivy	Vedbend
 	Jag	Hak
-	Join the crocwork Discord	Deltag i ArtCrafts Discord
-	Join the crocwork Discord ({url})	Deltag i ArtCrafts Discord ({url})
-	Join the crocwork Discord…	Deltag i ArtCrafts Discord…
+	Join the crocwork Discord	Deltag i crocwork Discord
+	Join the crocwork Discord ({url})	Deltag i crocwork Discord ({url})
+	Join the crocwork Discord…	Deltag i crocwork Discord…
 	Join us on Discord	Mød os på Discord
 	JPEG Options	JPEG-indstillinger
 	Jpeg quality	Jpeg-kvalitet
@@ -2626,12 +2626,12 @@ cameraRaw	Paint Overlay	Malingsoverlejring
 	crocwork Photo	crocwork Photo
 	crocwork Photo can't reach the system clipboard in this session. On Wayland, a Flatpak sandbox hides the protocol that images from other apps are read through.	crocwork Photo kan ikke få adgang til systemets udklipsholder i denne session. På Wayland skjuler en Flatpak-sandkasse den protokol, som billeder fra andre programmer læses igennem.
 	crocwork Photo Defaults	crocwork Photo-standarder
-	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo fandt dit tastaturgenvejssæt {set} fra et andet billedredigeringsprogram på denne computer: {n} af genvejene afviger fra PhotoCrafts. Vil du importere det?
+	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo fandt dit tastaturgenvejssæt {set} fra et andet billedredigeringsprogram på denne computer: {n} af genvejene afviger fra crocwork Photo. Vil du importere det?
 	crocwork Photo is using the CPU image compositor. The window may still use your graphics adapter.	crocwork Photo bruger CPU-billedsammensætteren. Vinduet bruger muligvis stadig din grafikadapter.
 	crocwork Photo keeps retrying; until a save succeeds, preference changes are lost when it closes.	crocwork Photo bliver ved med at prøve igen; indtil det lykkes at gemme, går ændringer i præferencerne tabt, når programmet lukkes.
 	crocwork Photo Manages Colors	crocwork Photo styrer farver
 	crocwork Photo on GitHub	crocwork Photo på GitHub
-	crocwork Photo Website	PhotoCrafts websted
+	crocwork Photo Website	crocwork Photo websted
 	crocwork Photo website	crocwork Photo-websted
 	crocwork Photo — an open-source, native image editor written in Rust.	crocwork Photo — et native open source-billedredigeringsprogram skrevet i Rust.
 	crocwork Photo — Screen Color Picker	crocwork Photo — Skærmfarvevælger

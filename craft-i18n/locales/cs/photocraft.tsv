@@ -156,7 +156,7 @@ smartSvg	AI/PDF/EPS contents will be edited as SVG. Saving replaces the embedded
 	Aligned	Zarovnáno
 	All Classes	Všechny třídy
 	All Layers No Adjustments	Všechny vrstvy bez korekcí
-	All shortcuts reset to crocwork Photo defaults.	Všechny zkratky byly obnoveny na výchozí hodnoty PhotoCraftu.
+	All shortcuts reset to crocwork Photo defaults.	Všechny zkratky byly obnoveny na výchozí hodnoty crocwork Photo.
 	All User Slices	Všechny uživatelské řezy
 	Allow agent control	Povolit ovládání agenty
 	Allow Continue	Povolit pokračování
@@ -2186,7 +2186,7 @@ cameraRaw	Orange	Oranžové
 	crocwork Photo	crocwork Photo
 	crocwork Photo can't reach the system clipboard in this session. On Wayland, a Flatpak sandbox hides the protocol that images from other apps are read through.	crocwork Photo v této relaci nemá přístup k systémové schránce. Na Waylandu sandbox Flatpaku skrývá protokol, přes který se čtou obrázky z jiných aplikací.
 	crocwork Photo Defaults	Výchozí crocwork Photo
-	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo na tomto počítači našel vaši sadu klávesových zkratek {set} z jiného editoru obrázků: {n} jejích zkratek se liší od zkratek PhotoCraftu. Importovat ji?
+	crocwork Photo found your keyboard shortcut set {set} from another image editor on this computer: {n} of its shortcuts differ from crocwork Photo's. Import it?	crocwork Photo na tomto počítači našel vaši sadu klávesových zkratek {set} z jiného editoru obrázků: {n} jejích zkratek se liší od zkratek crocwork Photo. Importovat ji?
 	crocwork Photo is using the CPU image compositor. The window may still use your graphics adapter.	crocwork Photo skládá obraz pomocí CPU. Okno může nadále používat grafický adaptér.
 	crocwork Photo keeps retrying; until a save succeeds, preference changes are lost when it closes.	crocwork Photo se nadále pokouší o uložení; dokud nebude úspěšné, změny předvoleb se při zavření ztratí.
 	crocwork Photo Manages Colors	Barvy spravuje crocwork Photo
@@ -3371,7 +3371,7 @@ navigator	Zoom	Zvětšení
 	{name} was changed by another app after it was opened or saved here.	Soubor {name} změnila jiná aplikace poté, co byl zde otevřen nebo uložen.
 @plural	{n} action file loaded|{n} action files loaded	Načten {n} soubor akcí|Načteny {n} soubory akcí|Načteno {n} souborů akcí
 @plural	{n} action|{n} actions	{n} akce|{n} akce|{n} akcí
-	{n} commands are not in crocwork Photo.	Příkazů, které v PhotoCraftu nejsou: {n}.
+	{n} commands are not in crocwork Photo.	Příkazů, které v crocwork Photo nejsou: {n}.
 @plural	{n} file could not be loaded: {errors}|{n} files could not be loaded: {errors}	{n} soubor nelze načíst: {errors}|{n} soubory nelze načíst: {errors}|{n} souborů nelze načíst: {errors}
 @plural	{n} layer recorded by this comp was deleted. Update the comp, or clear the warning.|{n} layers recorded by this comp were deleted. Update the comp, or clear the warning.	{n} vrstva zaznamenaná v této kompozici byla odstraněna. Aktualizujte kompozici nebo zrušte upozornění.|{n} vrstvy zaznamenané v této kompozici byly odstraněny. Aktualizujte kompozici nebo zrušte upozornění.|{n} vrstev zaznamenaných v této kompozici bylo odstraněno. Aktualizujte kompozici nebo zrušte upozornění.
 @plural	{n} layer|{n} layers	{n} vrstva|{n} vrstvy|{n} vrstev
@@ -3381,7 +3381,7 @@ navigator	Zoom	Zvětšení
 @plural	{n} sample point removed|{n} sample points removed	Odstraněn {n} bod měření|Odstraněny {n} body měření|Odstraněno {n} bodů měření
 @plural	{n} sample|{n} samples	{n} vzorek|{n} vzorky|{n} vzorků
 @plural	{n} slice|{n} slices	{n} řez|{n} řezy|{n} řezů
-@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} krok zatím nemá v PhotoCraftu obdobu|{n} kroky zatím nemají v PhotoCraftu obdobu|{n} kroků zatím nemá v PhotoCraftu obdobu
+@plural	{n} step has no crocwork Photo equivalent yet|{n} steps have no crocwork Photo equivalent yet	{n} krok zatím nemá v crocwork Photo obdobu|{n} kroky zatím nemají v crocwork Photo obdobu|{n} kroků zatím nemá v crocwork Photo obdobu
 @plural	{n} step with no Photoshop equivalent left out|{n} steps with no Photoshop equivalent left out	Vynechán {n} krok bez obdoby v Photoshopu|Vynechány {n} kroky bez obdoby v Photoshopu|Vynecháno {n} kroků bez obdoby v Photoshopu
 	{path}: the path is not valid Unicode; rename the file and open it again.	{path}: cesta není platný Unicode; přejmenujte soubor a otevřete jej znovu.
 	{path}: the path is not valid Unicode; save under another name.	{path}: cesta není platný Unicode; uložte soubor pod jiným názvem.
