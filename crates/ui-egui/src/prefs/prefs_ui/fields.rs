@@ -58,7 +58,7 @@ pub(super) fn humanize(key: &str) -> String {
         "connectAgents" => return "Let AI agents connect (MCP)".into(),
         "readRoot" => return "Folder agents can open from".into(),
         "writeRoot" => return "Folder agents can save to".into(),
-        "whenAppClosed" => return "When PhotoCraft is closed".into(),
+        "whenAppClosed" => return "When crocwork Photo is closed".into(),
         _ => {}
     }
     if key == "notificationDurationSeconds" {
@@ -135,10 +135,10 @@ pub(super) fn choice_label(v: &str) -> String {
         "ahd" => "AHD (adaptive homogeneity)".into(),
         "mhc" => "Malvar–He–Cutler".into(),
         "cpu" => "CPU (no GPU acceleration)".into(),
-        // MCP › When PhotoCraft is closed.
-        "launch" => "Open PhotoCraft".into(),
+        // MCP › When crocwork Photo is closed.
+        "launch" => "Open crocwork Photo".into(),
         "headless" => "Work without a window".into(),
-        "error" => "Ask to open PhotoCraft".into(),
+        "error" => "Ask to open crocwork Photo".into(),
         v => humanize(v),
     }
 }
@@ -265,7 +265,7 @@ fn prefs_body(ui: &mut egui::Ui, f: &mut Map<String, Value>, system: Option<egui
                     f.get("__order").and_then(|o| o.get(&section)).and_then(|v| serde_json::from_value(v.clone()).ok()).unwrap_or_default();
                 if !has_visible_fields(&values, &section) {
                     ui.add_space(4.0);
-                    ui.label(RichText::new(tl!("These settings aren't available in PhotoCraft yet.")).color(t.text_faint));
+                    ui.label(RichText::new(tl!("These settings aren't available in crocwork Photo yet.")).color(t.text_faint));
                 } else if section == "integrations"
                     && f.get("__agentLink").and_then(|s| s.get("mcpFlag")).and_then(Value::as_bool) == Some(true)
                     && let Some(obj) = values.get_mut(&section).and_then(Value::as_object_mut)
@@ -275,7 +275,7 @@ fn prefs_body(ui: &mut egui::Ui, f: &mut Map<String, Value>, system: Option<egui
                 } else if section == "integrations"
                     && let Some(obj) = values.get_mut(&section).and_then(Value::as_object_mut)
                 {
-                    // Without the AI-MCP feature flag: the settings PhotoCraft had before.
+                    // Without the AI-MCP feature flag: the settings crocwork Photo had before.
                     let mut shown: Map<String, Value> =
                         obj.iter().filter(|(k, _)| LEGACY_INTEGRATIONS.contains(&k.as_str())).map(|(k, v)| (k.clone(), v.clone())).collect();
                     section_fields(ui, &section, &mut shown, &order, lang, system, filter);
@@ -400,7 +400,7 @@ fn interface_groups(ui: &mut egui::Ui, obj: &mut Map<String, Value>, keys: &[Str
 
 /// Where a clicked colour swatch leaves its preference path and label for the dialog body, which
 /// holds the fields the Color Picker request goes in.
-/// Preferences › AI Integrations without the AI-MCP feature flag: the settings PhotoCraft had
+/// Preferences › AI Integrations without the AI-MCP feature flag: the settings crocwork Photo had
 /// before the agent connection page.
 const LEGACY_INTEGRATIONS: [&str; 2] = ["allowAgentControl", "controlPort"];
 
@@ -542,7 +542,7 @@ fn field_rows(ui: &mut egui::Ui, section: &str, obj: &mut Map<String, Value>, ke
                 let c = prefs::parse_hex(s).unwrap_or([128, 128, 128]);
                 let mut rgb = c;
                 ui.horizontal(|ui| {
-                    // PhotoCraft's Color Picker, as everywhere else (#2144).
+                    // crocwork Photo's Color Picker, as everywhere else (#2144).
                     if crate::widgets::color_swatch_button(ui, egui::Color32::from_rgb(rgb[0], rgb[1], rgb[2]), &label).clicked() {
                         ui.ctx().data_mut(|d| d.insert_temp(egui::Id::unique(PICK_ID), (path.clone(), label.clone())));
                     }
@@ -610,7 +610,7 @@ fn field_rows(ui: &mut egui::Ui, section: &str, obj: &mut Map<String, Value>, ke
                     if scratch.free_space_unmeasured {
                         let dir = scratch.dir.as_deref().map(|p| p.display().to_string()).unwrap_or_else(|| tl!("Unknown").into());
                         let warning = crate::i18n::fmt(
-                            tl!("The current scratch directory ({path}) doesn't report its free space, so PhotoCraft can't stop before it fills up, and large files get no extra room from it without a Scratch Size Limit. This warning applies to the current configuration; changes above take effect on Apply or OK. Set a limit or use a local disk."),
+                            tl!("The current scratch directory ({path}) doesn't report its free space, so crocwork Photo can't stop before it fills up, and large files get no extra room from it without a Scratch Size Limit. This warning applies to the current configuration; changes above take effect on Apply or OK. Set a limit or use a local disk."),
                             &[("path", &dir)],
                         );
                         ui.add(egui::Label::new(RichText::new(warning).color(t.warning)).wrap());

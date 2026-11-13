@@ -1,4 +1,4 @@
-//! Plain `photocraft-cli mcp` with agents allowed (the ArtCraft Launcher's switch): the MCP server finds the desktop
+//! Plain `photocraft-cli mcp` with agents allowed (the crocwork Launcher's switch): the MCP server finds the desktop
 //! app through its connection file before every call, follows it to a new port and token, and
 //! applies the closed-app choice (start it, headless, or an error) when no app answers.
 
@@ -125,7 +125,7 @@ fn live(dir: &Path, when_closed: Option<WhenAppClosed>) -> LiveConfig {
     let mut c = LiveConfig::new(dir.to_path_buf());
     c.when_closed = when_closed;
     c.launch_timeout = Duration::from_secs(10);
-    // The machine's own ArtCraft Launcher and feature flags stay out of the tests: agents are
+    // The machine's own crocwork Launcher and feature flags stay out of the tests: agents are
     // allowed exactly when the test's preferences say so (as without the AI-MCP flag).
     c.allowed = |i| i.connect_agents;
     c
@@ -205,7 +205,7 @@ async fn launch_starts_the_app_once_and_only_when_agents_may_connect() {
     assert_eq!(launches.load(Ordering::SeqCst), 0);
     client.cancel().await.unwrap();
 
-    // The ArtCraft Launcher's switch is the consent: the app is started on it alone.
+    // The crocwork Launcher's switch is the consent: the app is started on it alone.
     let mut c = config(&dir);
     c.allowed = |_| true;
     let client = connect(PhotocraftMcp::live(c)).await;
@@ -250,11 +250,11 @@ async fn a_launch_that_never_listens_times_out_with_advice() {
     c.launch = Some(Box::new(|| Err("no such file".into())));
     let client2 = connect(PhotocraftMcp::live(c)).await;
     let r = call(&client2, "ui_inspect", json!({})).await;
-    assert!(text(&r).contains("couldn't start PhotoCraft: no such file"), "{}", text(&r));
+    assert!(text(&r).contains("couldn't start crocwork Photo: no such file"), "{}", text(&r));
     // No launcher (Flatpak, the app not installed beside the CLI): ask the user.
     let client3 = connect(PhotocraftMcp::live(live(&dir, Some(WhenAppClosed::Launch)))).await;
     let r = call(&client3, "ui_inspect", json!({})).await;
-    assert!(text(&r).contains("open PhotoCraft"), "{}", text(&r));
+    assert!(text(&r).contains("open crocwork Photo"), "{}", text(&r));
     for c in [client, client2, client3] {
         c.cancel().await.unwrap();
     }

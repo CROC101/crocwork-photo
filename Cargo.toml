@@ -13,7 +13,7 @@ rust-version = "1.95"
 craft-ui = { git = "https://github.com/storytold/craft-libs", rev = "6e03f65bf45181db77ba6229716e6624db9eb25b", features = ["serde"] }
 # Feature flags shared with the launcher and the other Craft apps (craft-libs#1118, #1119).
 craft-flags = { git = "https://github.com/storytold/craft-libs", rev = "86d6e8c5b05a4dadc35ff1c8e5d2f992c687ee97" }
-# The ArtCraft Launcher's agents switch and app list, shared with the launcher, the MCP gateway and
+# The crocwork Launcher's agents switch and app list, shared with the launcher, the MCP gateway and
 # every Craft app (storytold/craft-ai-integrations#195). Pinned to the head of
 # storytold/craft-ai-integrations#197 until it merges.
 craft-ai-agents = { git = "https://github.com/storytold/craft-ai-integrations", rev = "35e0352666a117407d62230a6c6c2366f3e21a3b" }
@@ -138,7 +138,7 @@ codegen-units = 1
 
 # The browser build (apps/photocraft-web, `data-cargo-profile` in its index.html). Hosts cap the
 # size of a single file (Cloudflare Pages/Workers: 25 MiB), and the wasm is downloaded on every
-# visit, so this profile optimizes for size: fat LTO, opt-level "z" for PhotoCraft's own crates,
+# visit, so this profile optimizes for size: fat LTO, opt-level "z" for crocwork Photo's own crates,
 # "s" for dependencies and for the crates that decode files, and 3 for pixel processing (filters
 # and compositing). Dependencies stay at "s": at "z" the whole wasm grows (by 0.4 MB, measured).
 # panic stays the target default (wasm32-unknown-unknown aborts; AGENTS.md's `panic = "unwind"`

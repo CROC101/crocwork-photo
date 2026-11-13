@@ -120,7 +120,7 @@ fn fresh_metrics_text_writes_no_txt2_block() {
     assert!(saves_txt2(Kerning::Optical), "Optical lives only in Txt2");
 }
 
-/// #10308: stylistic sets (and other Txt2-only OpenType flags) on a PhotoCraft-native document
+/// #10308: stylistic sets (and other Txt2-only OpenType flags) on a crocwork Photo-native document
 /// write a `Txt2` block and round-trip through save and reopen.
 #[test]
 fn fresh_stylistic_sets_round_trip_through_psd() {

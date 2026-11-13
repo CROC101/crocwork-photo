@@ -1,7 +1,7 @@
 //! Preferences › AI Integrations: whether agents can use the open app (one switch for every Craft
-//! app, in the ArtCraft Launcher), the port, the folders agents may use, and what
+//! app, in the crocwork Launcher), the port, the folders agents may use, and what
 //! `photocraft-cli mcp` does while the app is closed. Changes apply at once, without a restart.
-//! Adding PhotoCraft to an MCP client is the launcher's job too, so there is nothing for it here.
+//! Adding crocwork Photo to an MCP client is the launcher's job too, so there is nothing for it here.
 
 use super::dialogs::is_preferences;
 use super::fields::{choice_label, humanize};
@@ -13,7 +13,7 @@ pub(super) const AGENT_LINK_RETRY_S: f64 = 5.0;
 /// Start, move or stop the agent connection when its settings change
 /// ([`crate::Services::agent_link`]); the first frame applies the saved settings. A connection
 /// that is on but failed to start is tried again every [`AGENT_LINK_RETRY_S`], so freeing its
-/// port is enough, without touching a setting. With the suite's `AI-MCP` flag, the ArtCraft
+/// port is enough, without touching a setting. With the suite's `AI-MCP` flag, the crocwork
 /// Launcher's switch ([`crate::Services::launcher_agents`]) alone decides whether agents may connect:
 /// one switch for every Craft app. Without the flag, as before, a Control Port saved in the
 /// preferences (`connectAgents`, set from it when they load).
@@ -59,10 +59,10 @@ pub(super) fn integration_rows(ui: &mut egui::Ui, obj: &mut Map<String, Value>, 
     let t = Tokens::get(ui.ctx());
     let status = f.get("__agentLink").cloned().unwrap_or(Value::Null);
     let launch_flags = status.get("launchFlags").and_then(Value::as_bool) == Some(true);
-    // One switch for every Craft app: ArtCraft Launcher › Settings › AI agents. There is none here.
+    // One switch for every Craft app: crocwork Launcher › Settings › AI agents. There is none here.
     ui.label(
         RichText::new(tl!(
-            "AI apps such as Claude can open, edit and save documents in this window while ArtCraft Launcher › Settings › AI agents › Let AI agents use Craft apps is on. Only programs on this computer can connect."
+            "AI apps such as Claude can open, edit and save documents in this window while crocwork Launcher › Settings › AI agents › Let AI agents use Craft apps is on. Only programs on this computer can connect."
         ))
         .color(t.text_dim),
     );
@@ -73,7 +73,7 @@ pub(super) fn integration_rows(ui: &mut egui::Ui, obj: &mut Map<String, Value>, 
         (true, _, _) => (tl!("Managed by the launch options (--control).").to_string(), t.text_dim),
         (false, _, Some(e)) => (e.to_string(), t.danger),
         (false, Some(p), None) => (crate::i18n::fmt(tl!("Agents can connect on 127.0.0.1:{port}."), &[("port", &p.to_string())]), t.accent_text),
-        (false, None, None) => (tl!("Off: turn on AI agents in ArtCraft Launcher › Settings › AI agents.").to_string(), t.text_faint),
+        (false, None, None) => (tl!("Off: turn on AI agents in crocwork Launcher › Settings › AI agents.").to_string(), t.text_faint),
     };
     ui.label(RichText::new(line).color(color));
     ui.add_space(8.0);

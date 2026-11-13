@@ -65,7 +65,7 @@ choice!(CanvasBorder { DropShadow = "dropShadow", Line = "line", None = "none" }
 choice!(UiScale { Auto = "auto", P75 = "75", P80 = "80", P85 = "85", P90 = "90", P95 = "95", P100 = "100", P105 = "105", P110 = "110", P115 = "115", P120 = "120", P125 = "125", P150 = "150", P175 = "175", P200 = "200", P250 = "250", P300 = "300" } default Auto);
 choice!(
     /// Graphics backend of the desktop app's window and GPU canvas (applies at next launch).
-    /// `auto` lets PhotoCraft pick (DX12 for Intel adapters on Windows); `cpu` composites on the
+    /// `auto` lets crocwork Photo pick (DX12 for Intel adapters on Windows); `cpu` composites on the
     /// CPU and draws the window with a software adapter where the platform has one. A start that
     /// crashes inside the graphics driver moves this to the next safer choice.
     GpuBackend { Auto = "auto", Vulkan = "vulkan", Dx12 = "dx12", Metal = "metal", Gl = "gl", Cpu = "cpu" } default Auto
@@ -77,9 +77,9 @@ choice!(
 );
 choice!(
     /// Linux display server of the desktop app's window (applies at next launch). `x11` runs
-    /// PhotoCraft through XWayland on a Wayland session, where native file drag and drop works
+    /// crocwork Photo through XWayland on a Wayland session, where native file drag and drop works
     /// (winit 0.30 has none on Wayland, issue #386); fractional scaling may then look softer.
-    /// It needs an X server (`DISPLAY`); without one PhotoCraft starts as `auto`. Other
+    /// It needs an X server (`DISPLAY`); without one crocwork Photo starts as `auto`. Other
     /// platforms ignore it.
     LinuxDisplayServer { Auto = "auto", X11 = "x11" } default Auto
 );
@@ -121,7 +121,7 @@ choice!(
     RawDemosaic { Ahd = "ahd", Mhc = "mhc", Bilinear = "bilinear" } default Ahd
 );
 choice!(
-    /// MCP › When PhotoCraft Is Closed: what `photocraft-cli mcp` does when an
+    /// MCP › When crocwork Photo Is Closed: what `photocraft-cli mcp` does when an
     /// agent calls a tool and the app isn't running.
     WhenAppClosed { Launch = "launch", Headless = "headless", Error = "error" } default Launch
 );
@@ -377,13 +377,13 @@ pub struct Interface {
     /// Move tool drags show only the layer's outline and an arrow, leaving its pixels in place
     /// until release. Off (the default), the pixels follow the pointer live inside the outline.
     pub show_bounding_box_when_dragging_layer: bool,
-    /// Windows and Linux: use the system's title bar and window buttons instead of PhotoCraft's
+    /// Windows and Linux: use the system's title bar and window buttons instead of crocwork Photo's
     /// own one-row title bar (tiling window managers, desktops that draw their own decorations;
     /// #1271, #1316). The integrated title bar remains the default on Linux and Windows;
     /// the system frame is opt-in. Read when the app starts. macOS always uses the system's.
     pub system_title_bar: bool,
     /// Show the active document's file name in the title bar and the OS window title. The tabs
-    /// already name the file, so this can be turned off for a plain "PhotoCraft" title (#5037).
+    /// already name the file, so this can be turned off for a plain "crocwork Photo" title (#5037).
     /// The unsaved-changes mark stays either way.
     pub show_file_name_in_title: bool,
     /// Notices (the lower-right cards) hide themselves after
@@ -709,7 +709,7 @@ fn effect_cache_budget_bytes_for(stored: u32, small: bool) -> u64 {
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 pub struct Performance {
-    /// Memory PhotoCraft may use, in MB: bounds each document's pixels plus its History (the
+    /// Memory crocwork Photo may use, in MB: bounds each document's pixels plus its History (the
     /// oldest states are dropped beyond it), and the result of one transform.
     pub memory_usage_mb: u32,
     /// Percent of physical RAM for the complete process; None preserves the legacy MB limit.
@@ -1190,7 +1190,7 @@ pub fn migrate_integrations(section: &mut Value) {
 /// A saved `integrations` section read as the app's preference load reads it: migrated, and
 /// leniently (a value of the wrong type keeps its default, the rest still loads). The desktop
 /// app's launch read and `photocraft-cli mcp` use it, so a bad value can't reset, say, When
-/// PhotoCraft Is Closed for them alone.
+/// crocwork Photo Is Closed for them alone.
 pub fn read_integrations_section(mut section: Value) -> Integrations {
     migrate_integrations(&mut section);
     read_section(section)
@@ -1212,7 +1212,7 @@ pub struct Integrations {
     /// Without the suite's `AI-MCP` flag, agents may connect: the desktop app serves the control
     /// protocol on loopback for `photocraft-cli mcp` without `--control`, and starts or stops it at
     /// once when this changes (off by default; launch flags still win). Set from a saved Control
-    /// Port ([`migrate_integrations`]); not in the dialog. With the flag the ArtCraft Launcher's
+    /// Port ([`migrate_integrations`]); not in the dialog. With the flag the crocwork Launcher's
     /// switch decides instead. After the older fields, so a
     /// section saved as a list still reads them where they were.
     pub connect_agents: bool,

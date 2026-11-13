@@ -6,7 +6,7 @@ This threat model covers the source repository's desktop, CLI, WebAssembly, form
 
 - confidentiality of user documents, metadata, credentials, and unrelated local files;
 - integrity of documents, preferences, filesystem contents, and application state;
-- availability of PhotoCraft and the host system;
+- availability of crocwork Photo and the host system;
 - integrity and provenance of release artifacts and dependencies;
 - predictable command execution and document fidelity.
 

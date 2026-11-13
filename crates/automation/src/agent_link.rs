@@ -1,6 +1,6 @@
 //! Connecting AI agents to the open desktop app: whether the person lets them (one switch, in
-//! the ArtCraft Launcher, [`agents_allowed`]), and how a local client finds the app's control
-//! server without being told. Adding PhotoCraft to MCP clients is the launcher's job (one entry
+//! the crocwork Launcher, [`agents_allowed`]), and how a local client finds the app's control
+//! server without being told. Adding crocwork Photo to MCP clients is the launcher's job (one entry
 //! for every Craft app), so nothing here writes a client's configuration.
 //!
 //! While agents may connect (and no `--control` was given), the app serves its control protocol
@@ -35,7 +35,7 @@ use crate::AutomationError;
 pub const CONNECTION_FILE: &str = "agent-connection.json";
 /// The bearer-token file the app keeps in its settings folder for agent connections.
 pub const TOKEN_FILE: &str = "agent-control.token";
-/// The server name MCP clients list PhotoCraft under.
+/// The server name MCP clients list crocwork Photo under.
 pub const SERVER_NAME: &str = "photocraft";
 /// How long [`probe`] waits for the app to accept a connection.
 pub const PROBE_TIMEOUT: Duration = Duration::from_millis(500);
@@ -182,16 +182,16 @@ pub fn read_integrations(dir: &Path) -> Integrations {
 
 // ---- The agents switch -------------------------------------------------------------------------
 
-/// The id the ArtCraft Launcher's app list names PhotoCraft by.
+/// The id the crocwork Launcher's app list names crocwork Photo by.
 pub const LAUNCHER_APP_ID: &str = "photocraft";
 
-/// The suite's `AI-MCP` feature flag (`ArtCraft/flags.toml` or `CRAFT_FLAGS`).
+/// The suite's `AI-MCP` feature flag (`crocwork/flags.toml` or `CRAFT_FLAGS`).
 pub fn mcp_flag() -> bool {
     craft_flags::load().enabled(&craft_flags::AI_MCP)
 }
 
-/// The ArtCraft Launcher's switch (Settings › AI agents › *Let AI agents use Craft apps*) lets
-/// agents use PhotoCraft: the `AI-MCP` flag is on and the launcher's app list names PhotoCraft,
+/// The crocwork Launcher's switch (Settings › AI agents › *Let AI agents use Craft apps*) lets
+/// agents use crocwork Photo: the `AI-MCP` flag is on and the launcher's app list names crocwork Photo,
 /// read through `craft-ai-agents` like the launcher, the MCP gateway and every Craft app do. Reads
 /// two small files; ask from a timer, not every frame.
 pub fn launcher_allows_agents() -> bool {
@@ -199,7 +199,7 @@ pub fn launcher_allows_agents() -> bool {
 }
 
 /// Whether agents may use the open window. With the `AI-MCP` flag only the launcher's switch
-/// decides: there is one switch for every Craft app, and none in PhotoCraft. Without the flag it
+/// decides: there is one switch for every Craft app, and none in crocwork Photo. Without the flag it
 /// is as on `main`: a Control Port saved in the preferences (`connect_agents`, set from it when
 /// the preferences load). Allow Agent Control off still refuses agents either way.
 pub fn agents_allowed(integrations: &Integrations, mcp_flag: bool, launcher: bool) -> bool {
@@ -234,7 +234,7 @@ mod tests {
         assert!(!agents_allowed(&none, false, true), "the launcher's list means nothing without the flag");
         // With the flag: the launcher's switch, and nothing else.
         assert!(agents_allowed(&none, true, true));
-        assert!(!agents_allowed(&legacy, true, false), "no second switch in PhotoCraft");
+        assert!(!agents_allowed(&legacy, true, false), "no second switch in crocwork Photo");
     }
 
     #[test]

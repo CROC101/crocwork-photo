@@ -1,4 +1,4 @@
-//! Agents in the open desktop app: while the person lets them in (ArtCraft Launcher › Settings ›
+//! Agents in the open desktop app: while the person lets them in (crocwork Launcher › Settings ›
 //! AI agents; without the `AI-MCP` flag, a Control Port saved before), the app serves the control
 //! protocol by itself (no `--control`) and publishes the connection file `photocraft-cli mcp`
 //! finds it by ([`photocraft_automation::agent_link`]). Turning it on or off, or changing the
@@ -71,7 +71,7 @@ fn apply(running: &mut Option<Running>, dir: Option<&Path>, integrations: &Integ
     }
     let Some(dir) = dir else {
         out.stopped = running.take().is_some();
-        out.status.error = Some("Agents can't connect: PhotoCraft has no settings folder (no home folder).".into());
+        out.status.error = Some("Agents can't connect: crocwork Photo has no settings folder (no home folder).".into());
         return out;
     };
     if running.as_ref().is_none_or(|r| r.port_pref != integrations.control_port) {
@@ -111,10 +111,10 @@ fn apply(running: &mut Option<Running>, dir: Option<&Path>, integrations: &Integ
     out
 }
 
-/// How often [`launcher_watch`] looks at the ArtCraft Launcher's files.
+/// How often [`launcher_watch`] looks at the crocwork Launcher's files.
 const LAUNCHER_POLL: std::time::Duration = std::time::Duration::from_secs(2);
 
-/// Whether the ArtCraft Launcher turned agents on for every Craft app
+/// Whether the crocwork Launcher turned agents on for every Craft app
 /// ([`agent_link::launcher_allows_agents`]), watched on its own thread so the UI can ask every
 /// frame without touching the disk. A change wakes the UI, which then starts or stops the
 /// connection. Without a thread (one couldn't be started) the answer stays what it was at launch.
@@ -128,13 +128,13 @@ pub fn launcher_watch(ctx: &egui::Context) -> Box<dyn Fn() -> bool> {
             std::thread::sleep(LAUNCHER_POLL);
             let now = agent_link::launcher_allows_agents();
             if seen.swap(now, Ordering::Relaxed) != now {
-                log::info!("ArtCraft Launcher: agents {}", if now { "on" } else { "off" });
+                log::info!("crocwork Launcher: agents {}", if now { "on" } else { "off" });
                 ctx.request_repaint();
             }
         }
     });
     if let Err(e) = started {
-        log::warn!("couldn't watch the ArtCraft Launcher's agents switch: {e}");
+        log::warn!("couldn't watch the crocwork Launcher's agents switch: {e}");
     }
     Box::new(move || on.load(Ordering::Relaxed))
 }

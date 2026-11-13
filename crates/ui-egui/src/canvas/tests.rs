@@ -1954,7 +1954,7 @@ fn wayland_start_screen_hint_offers_file_drop() {
     assert!(start_screen_drop_hint(&wayland).starts_with("Drop"));
 }
 
-/// A tiling window manager can hand PhotoCraft a canvas narrower than the Home card (460
+/// A tiling window manager can hand crocwork Photo a canvas narrower than the Home card (460
 /// points): the two buttons must stay inside the window instead of being clipped at its edges.
 #[test]
 fn start_screen_buttons_stay_inside_a_narrow_canvas() {
@@ -2191,7 +2191,7 @@ fn eyedropper_drag_updates_the_sampled_colour() {
 
 /// #10074: painting a group looked as if it worked (the stroke's trail followed the pointer) and
 /// vanished on release with only a status-bar note. Photoshop refuses at the press with a
-/// message; so does PhotoCraft, and nothing is painted or drawn.
+/// message; so does crocwork Photo, and nothing is painted or drawn.
 #[test]
 fn painting_a_group_is_refused_at_the_press_with_a_message() {
     let mut app = PhotocraftApp::new(photocraft_engine::Session::new(), Default::default());

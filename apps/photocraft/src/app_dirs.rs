@@ -93,7 +93,7 @@ pub fn resolve_recovery(data: &DataDir, env: impl Fn(&str) -> Option<OsString>) 
     data.dir.as_ref().map(|d| d.join(RECOVERY))
 }
 
-/// The lock file, beside the recovery folder, that keeps two PhotoCraft processes starting at
+/// The lock file, beside the recovery folder, that keeps two crocwork Photo processes starting at
 /// once (`--new-instance`, control launches) from moving the same autosaves.
 const MIGRATION_LOCK: &str = "recovery-migration.lock";
 
@@ -143,7 +143,7 @@ fn adopt_legacy_recovery_waiting(legacy: &Path, dir: &Path, wait: std::time::Dur
             Err(std::fs::TryLockError::WouldBlock) if std::time::Instant::now() < deadline => std::thread::sleep(std::time::Duration::from_millis(50)),
             Err(std::fs::TryLockError::WouldBlock) => {
                 // Another process is moving and may yet remove the old folder: never write there.
-                log::info!("another PhotoCraft is moving crash-recovery autosaves; using {}", dir.display());
+                log::info!("another crocwork Photo is moving crash-recovery autosaves; using {}", dir.display());
                 return dir.to_path_buf();
             }
             Err(std::fs::TryLockError::Error(e)) => {
@@ -304,7 +304,7 @@ fn move_path(from: &Path, to: &Path) -> std::io::Result<()> {
 
 /// Move `from` to `to` by copying. `from` is first renamed aside on its own volume
 /// (`.<name>.<pid>-<n>.held`, [`hold`]), so a process still writing to the old path (another
-/// launch that couldn't take the lock, an older PhotoCraft) starts a new `from` there instead of
+/// launch that couldn't take the lock, an older crocwork Photo) starts a new `from` there instead of
 /// adding to what is copied, and nothing it writes is removed. The held original is copied to a
 /// staged path ([`stage_copy`]), published without replacing anything ([`publish`]), and only
 /// then removed. If the copy or publish fails, the held original is put back ([`put_back`]).

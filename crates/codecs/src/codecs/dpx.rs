@@ -233,7 +233,7 @@ pub(crate) fn encode(src: &Image, plan: Plan, opts: &EncodeOptions) -> Result<Ve
     // No claim about the encoding unless the document came with one.
     let code = |key| keep(key).and_then(|v| v.parse::<u8>().ok());
     let meta = craft_dpx::Metadata {
-        creator: Some(keep(KEY_CREATOR).unwrap_or("PhotoCraft")),
+        creator: Some(keep(KEY_CREATOR).unwrap_or("crocwork Photo")),
         project: keep(KEY_PROJECT),
         copyright: keep(KEY_COPYRIGHT),
         creation_time: keep(KEY_CREATION_TIME),

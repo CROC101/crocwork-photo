@@ -1,6 +1,6 @@
 # Summary
 
-[PhotoCraft Documentation](README.md)
+[crocwork Photo Documentation](README.md)
 
 # Getting started
 

@@ -50,7 +50,7 @@ fn ai_integrations_start_and_stop_the_agent_connection_through_the_service() {
     assert!(crate::control::inspect(&app, &ctx).get("agentLink").is_some());
 }
 
-/// With the AI-MCP flag the ArtCraft Launcher's switch is the one consent: it starts the
+/// With the AI-MCP flag the crocwork Launcher's switch is the one consent: it starts the
 /// connection, turning it off there stops it again, and a Control Port saved before (the old,
 /// flag-less way) doesn't keep it on.
 #[test]
@@ -123,7 +123,7 @@ fn connection_updates_keep_the_mcp_flag() {
 }
 
 /// With the flag the page has no switch of its own and nothing that sets up an MCP client: it says
-/// where agents are turned on (the ArtCraft Launcher), and keeps the port, folders and closed-app
+/// where agents are turned on (the crocwork Launcher), and keeps the port, folders and closed-app
 /// choice.
 #[test]
 fn ai_integrations_point_to_the_launcher_and_have_no_switch_or_client_buttons() {
@@ -139,8 +139,8 @@ fn ai_integrations_point_to_the_launcher_and_have_no_switch_or_client_buttons() 
     for label in ["Let AI agents connect (MCP)", "Copy Configuration", "Add to Claude Desktop", "Copy Prompt for an Agent"] {
         assert!(h.query_by_label(label).is_none(), "{label}");
     }
-    h.get_by_label_contains("ArtCraft Launcher › Settings › AI agents › Let AI agents use Craft apps");
-    h.get_by_label("Off: turn on AI agents in ArtCraft Launcher › Settings › AI agents.");
+    h.get_by_label_contains("crocwork Launcher › Settings › AI agents › Let AI agents use Craft apps");
+    h.get_by_label("Off: turn on AI agents in crocwork Launcher › Settings › AI agents.");
     assert!(h.query_by_label("Folder agents can open from").is_some(), "the folders stay");
 }
 

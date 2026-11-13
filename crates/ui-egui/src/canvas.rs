@@ -1806,7 +1806,7 @@ fn eyedropper_owns_image(app: &PhotocraftApp) -> bool {
         || crate::layer_picker::armed(app).is_some()
 }
 
-/// Set the cursor for the tool over the image, and paint the ones PhotoCraft draws itself (the
+/// Set the cursor for the tool over the image, and paint the ones crocwork Photo draws itself (the
 /// brush tip outline, the crosshair, a tool's own icon). The first case that applies wins: a pan
 /// keeps the fist it set, an eyedropper that owns the image keeps the cursor it set, a stale
 /// pointer position over another window paints nothing, then a guide under the pointer, then the

@@ -1,4 +1,4 @@
-//! Where PhotoCraft keeps its per-user data, resolved the same way by the desktop app and
+//! Where crocwork Photo keeps its per-user data, resolved the same way by the desktop app and
 //! `photocraft-cli` (which finds the app's agent connection file there, see [`crate::agent_link`]).
 //!
 //! In order:
@@ -17,7 +17,7 @@ use std::ffi::OsString;
 use std::path::{Path, PathBuf};
 
 /// Files beside the executable that switch on portable mode (either one; contents are ignored).
-pub const PORTABLE_MARKERS: [&str; 2] = ["portable.txt", "PhotoCraft.portable"];
+pub const PORTABLE_MARKERS: [&str; 2] = ["portable.txt", "crocwork Photo.portable"];
 /// The data folder created beside the executable in portable mode.
 pub const PORTABLE_DATA_DIR: &str = "PhotoCraftData";
 

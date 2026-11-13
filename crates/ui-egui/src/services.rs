@@ -367,9 +367,9 @@ pub struct AgentLinkStatus {
     /// Why the connection, or one of its folders, couldn't be set up.
     pub error: Option<String>,
     /// The suite's `AI-MCP` feature flag (`craft-flags`): without it the page shows only the
-    /// connection settings PhotoCraft had before (Allow Agent Control, Control Port).
+    /// connection settings crocwork Photo had before (Allow Agent Control, Control Port).
     pub mcp_flag: bool,
-    /// The ArtCraft Launcher's switch (Settings › AI agents) lets agents use the Craft apps: with
+    /// The crocwork Launcher's switch (Settings › AI agents) lets agents use the Craft apps: with
     /// the `AI-MCP` flag, the one consent for agents in this window.
     pub launcher: bool,
 }
@@ -586,7 +586,7 @@ pub struct Services {
     /// Preferences › AI Integrations (desktop): starts, moves or stops the agent connection when
     /// its settings change. `None` on the web, and when `--control` manages the connection.
     pub agent_link: Option<AgentLinkFn>,
-    /// Whether the ArtCraft Launcher turned agents on for every Craft app, cheap enough to ask every
+    /// Whether the crocwork Launcher turned agents on for every Craft app, cheap enough to ask every
     /// frame (the desktop app watches the launcher's files on its own thread). `None` without the
     /// suite's `AI-MCP` flag, on the web, and in tests that don't set it.
     pub launcher_agents: Option<Box<dyn Fn() -> bool>>,
