@@ -18,7 +18,7 @@ either. Write for an artist, not a developer.
 - Link to other pages instead of repeating them. Use relative links to the `.md` file:
   `[Install crocwork Photo](../getting-started/install.md)`.
 - No marketing copy, no "simply", no claims you have not checked in the code or a release.
-- Call the product "crocwork Photo", as the app, its downloads and getartcraft.com do.
+- Call the product "crocwork Photo", as the app, its downloads and github.com/CROC101/crocwork-photo do.
 - Name UI labels exactly as the app shows them, in **bold**. Menu paths read `File › Open…`.
 - Troubleshooting pages: `## Symptoms`, `## Fix`, `## Why this happens` (optional),
   `## Still stuck?` (link the issue tracker or Discord).

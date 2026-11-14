@@ -1,11 +1,11 @@
 ---
 title: Install crocwork Photo
-description: Download crocwork Photo for Windows 10 or 11, macOS or Linux from getartcraft.com or GitHub, or install it with crocwork Launcher.
+description: Download crocwork Photo for Windows 10 or 11, macOS or Linux from github.com/CROC101/crocwork-photo or GitHub, or install it with crocwork Launcher.
 order: 10
 verified: 0.8.2
 ---
 
-The easiest way is the [crocwork Photo page on getartcraft.com](https://github.com/CROC101/crocwork-photo). You can also install it with [crocwork Launcher](https://github.com/CROC101/crocwork-photo), which lists crocwork Photo. For a specific build or file format, take it from the [latest release](https://github.com/CROC101/crocwork-photo/releases/latest) on GitHub. In the file names below, `<version>` stands for the version number, for example `0.8.2`.
+The easiest way is the [crocwork Photo page on github.com/CROC101/crocwork-photo](https://github.com/CROC101/crocwork-photo). You can also install it with [crocwork Launcher](https://github.com/CROC101/crocwork-photo), which lists crocwork Photo. For a specific build or file format, take it from the [latest release](https://github.com/CROC101/crocwork-photo/releases/latest) on GitHub. In the file names below, `<version>` stands for the version number, for example `0.8.2`.
 
 ## Windows
 
