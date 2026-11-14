@@ -191,7 +191,7 @@ pub fn mcp_flag() -> bool {
 }
 
 /// The crocwork Launcher's switch (Settings › AI agents › *Let AI agents use Craft apps*) lets
-/// agents use crocwork Photo: the `AI-MCP` flag is on and the launcher's app list names crocwork Photo,
+/// agents use crocwork Photo: the `AI-MCP` flag is on and the launcher's app list names PhotoCraft,
 /// read through `craft-ai-agents` like the launcher, the MCP gateway and every Craft app do. Reads
 /// two small files; ask from a timer, not every frame.
 pub fn launcher_allows_agents() -> bool {

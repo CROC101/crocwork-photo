@@ -76,7 +76,7 @@ verify_appimagetool_override() { return 1; }
     env.update(CARGO_TARGET_DIR=str(target), DIST=str(temp / "dist"), CROSS_ARCH="x86_64", PHOTOCRAFT_BUILD_DATE="2026-01-01")
     run(["bash", "packaging/linux/package.sh", "--skip-build", "--formats", "tar appimage"], fixture, env)
     assert_docs(target / "linux-package/root/usr/share/doc/photocraft")
-    assert_docs(target / "linux-package/crocwork Photo.AppDir/usr/share/doc/photocraft")
+    assert_docs(target / "linux-package/PhotoCraft.AppDir/usr/share/doc/photocraft")
     archives = list((temp / "dist").glob("*.tar.gz"))
     assert len(archives) == 1, f"expected one tarball, found {archives}"
     unpacked = temp / "unpacked"

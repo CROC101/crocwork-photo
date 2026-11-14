@@ -123,7 +123,7 @@ cp "$WORK/bin/photocraft" "$APP/Contents/MacOS/crocwork Photo"
 # The CLI too, beside the app: Preferences › AI Integrations points MCP clients at it
 # (`photocraft-cli mcp`), and it starts the app when an agent needs it.
 cp "$WORK/bin/photocraft-cli" "$APP/Contents/MacOS/photocraft-cli"
-cp "$ROOT/assets/app-icon/photocraft.icns" "$APP/Contents/Resources/crocwork Photo.icns"
+cp "$ROOT/assets/app-icon/photocraft.icns" "$APP/Contents/Resources/PhotoCraft.icns"
 # Notices for the bundled font fallback, included before the bundle is signed.
 cp "$ROOT/NOTICE" "$ROOT/ATTRIBUTION.md" "$APP/Contents/Resources/"
 # Licences of the embedded craft-fonts fonts (only when built with CRAFT_FONTS_DIR).

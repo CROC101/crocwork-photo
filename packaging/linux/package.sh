@@ -137,7 +137,7 @@ fi
 
 # ---- AppImage -----------------------------------------------------------------------------------
 if has appimage; then
-  APPDIR="$WORK/crocwork Photo.AppDir"
+  APPDIR="$WORK/PhotoCraft.AppDir"
   cp -R "$STAGE" "$APPDIR"
   # Preserve the sctk-adwaita MIT notice in the packaged AppImage.
   install -Dm644 "$ROOT/NOTICE" "$APPDIR/usr/share/doc/photocraft/NOTICE"
