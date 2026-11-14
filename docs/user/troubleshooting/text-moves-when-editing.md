@@ -26,4 +26,4 @@ Clicking a PSD text layer with the Type tool starts editing it, and crocwork Pho
 
 ## Still stuck?
 
-If text still moves in 0.8.2, keep a copy of the original with **File › Save a Copy…**, then report it in the [issue tracker](https://github.com/CROC101/crocwork-photo) with the PSD (zipped) and the Photoshop version that saved it. You can also ask in [Discord](https://github.com/CROC101/crocwork-photo). See [Get help with a problem](get-help.md).
+If text still moves in 0.8.2, keep a copy of the original with **File › Save a Copy…**, then report it in the [issue tracker](https://github.com/CROC101/crocwork-photo) with the PSD (zipped) and the Photoshop version that saved it. You can also ask in [Discord](https://discord.gg/sNYsVbh3v). See [Get help with a problem](get-help.md).

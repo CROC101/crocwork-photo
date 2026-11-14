@@ -6,7 +6,7 @@ use serde_json::{Value, json};
 
 use crate::PhotocraftApp;
 
-pub const DISCORD: &str = "https://github.com/CROC101/crocwork-photo";
+pub const DISCORD: &str = "https://discord.gg/sNYsVbh3v";
 pub const ARTCRAFT_WEBSITE: &str = "https://github.com/CROC101/crocwork-photo";
 pub const APP_PAGE: &str = "https://github.com/CROC101/crocwork-photo";
 pub const TUTORIALS: &str = "https://github.com/CROC101/crocwork-photo";
@@ -127,7 +127,7 @@ mod tests {
         let mut app = PhotocraftApp::new(photocraft_engine::Session::new(), Default::default());
         let ctx = egui::Context::default();
         for (id, url) in [
-            ("help.discord", "https://github.com/CROC101/crocwork-photo"),
+            ("help.discord", "https://discord.gg/sNYsVbh3v"),
             ("help.website", "https://github.com/CROC101/crocwork-photo"),
             ("help.github", "https://github.com/CROC101/crocwork-photo"),
         ] {

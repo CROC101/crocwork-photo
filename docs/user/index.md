@@ -22,4 +22,4 @@ crocwork Photo is one of the Crafting Apps from the crocwork team, next to Vecto
 
 ## Get help
 
-Ask in [Discord](https://github.com/CROC101/crocwork-photo) or open an issue in the [issue tracker](https://github.com/CROC101/crocwork-photo). In crocwork Photo, **Help › Report an Issue…** opens the same issue tracker.
+Ask in [Discord](https://discord.gg/sNYsVbh3v) or open an issue in the [issue tracker](https://github.com/CROC101/crocwork-photo). In crocwork Photo, **Help › Report an Issue…** opens the same issue tracker.

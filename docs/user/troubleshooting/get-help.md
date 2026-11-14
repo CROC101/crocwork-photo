@@ -5,7 +5,7 @@ order: 30
 verified: 0.8.2
 ---
 
-Open **Help › Report an Issue…**. It takes you to the [crocwork Photo issue tracker](https://github.com/CROC101/crocwork-photo) on GitHub. You can also ask in [Discord](https://github.com/CROC101/crocwork-photo).
+Open **Help › Report an Issue…**. It takes you to the [crocwork Photo issue tracker](https://github.com/CROC101/crocwork-photo) on GitHub. You can also ask in [Discord](https://discord.gg/sNYsVbh3v).
 
 ## What to include
 

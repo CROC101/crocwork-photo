@@ -26,4 +26,4 @@ crocwork Photo draws its own title bar. When such a window was maximized, Window
 
 ## Still stuck?
 
-If you still see it on 0.8.2, add your Windows version and crocwork Photo version to [issue 3864](https://github.com/storytold/photocraft/issues/3864), or ask in [Discord](https://github.com/CROC101/crocwork-photo). As a test, you can switch on **System title bar** under **Edit › Preferences › Interface…**, click **Apply** and restart crocwork Photo; Windows then draws the title bar. See [Get help with a problem](get-help.md) for what to include.
+If you still see it on 0.8.2, add your Windows version and crocwork Photo version to [issue 3864](https://github.com/storytold/photocraft/issues/3864), or ask in [Discord](https://discord.gg/sNYsVbh3v). As a test, you can switch on **System title bar** under **Edit › Preferences › Interface…**, click **Apply** and restart crocwork Photo; Windows then draws the title bar. See [Get help with a problem](get-help.md) for what to include.
